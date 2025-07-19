@@ -32,8 +32,8 @@
 #show link: underline
 
 #let voc(words, explain) = {
-  strong(emph(words))
-  sidenote(side: right)[#emph(words)：#explain]
+  highlight(emph(words))
+  sidenote(side: right)[#strong(words)：#explain]
 }
 
 #align(center)[= The Courtship of Mr Lyon]
