@@ -1,36 +1,19 @@
 #import "@preview/marginalia:0.2.3" as marginalia: note, notefigure, wideblock
 
-#show: marginalia.setup.with(
-  inner: (width: 0mm, sep: 0mm, far: 20mm),
-  outer: (width: 80mm, sep: 15mm, far: 20mm),
-// top: 2.5cm,
-// bottom: 2.5cm,
-// book: false,
-// clearance: 12pt,
-)
-
-#let note = note.with(
-  text-style: (
-    size: 13pt, 
-    font: ("Gentium Book Basic", "YouYuan")
-  ),
-  numbering: none, 
-  anchor-numbering: none)
-
-#let notefigure = notefigure.with(
-  text-style: (
-    size: 13pt, 
-    style: "italic",
-    font: ("Gentium Book Basic", "YouYuan")
-  ),
-  numbering: none, 
-  anchor-numbering: none,
-  show-caption: (number, caption) => {
-    align(center, caption.body)
-  }
-)
-
 #let title = [The Courtship of Mr~Lyon]
+
+#set text(
+  size: 16pt,
+  font: ("Gentium Book Basic", "YouYuan")
+)
+
+#set par(
+  justify: true,
+  leading: .75em)
+
+#show heading: set block(below: 2em)
+
+#show link: underline
 
 #set page(
   flipped: true,
@@ -50,29 +33,77 @@
   },
 )
 
-#set text(
-  size: 16pt,
-  font: "Gentium Book Basic",
-  )
+#show: marginalia.setup.with(
+  inner: (width: 0mm, sep: 0mm, far: 20mm),
+  outer: (width: 82mm, sep: 15mm, far: 20mm),
+)
 
-#set par(
-  justify: true,
-  leading: .75em)
+#let note = note.with(
+  text-style: (
+    size: 13pt, 
+  ),
+  numbering: none, 
+  anchor-numbering: none)
 
-#show heading: set block(below: 2em)
+#let notefigure = notefigure.with(
+  text-style: (
+    size: 13pt, 
+    style: "italic",
+  ),
+  numbering: none, 
+  anchor-numbering: none,
+  show-caption: (number, caption) => {
+    align(center, caption.body)
+  }
+)
+
+#let snote-counter = counter("snote") // sentence note
+#let snote = note.with(
+  text-style: (
+    size: 13pt, 
+  ),
+  counter: snote-counter,
+  numbering: (.., i) => text(font: "Alef", fill: blue)[#i#h(0.5em - 2pt)],
+  anchor-numbering: (.., i) => text(blue, super[#i])
+)
 
 
-#show link: underline
+#set figure(gap: 1mm, numbering: none)
+
+#show figure.caption: note.with(
+  alignment: "bottom", 
+  anchor-numbering: none,
+  numbering: none,
+  shift: "avoid",   
+  text-style: (
+    size: 13pt, 
+    style: "italic",
+  ),
+)
 
 #let voc(words, explain) = {
-  highlight(words)
-  note[#emph(words)：#explain]
+  note(strong(emph(words)) + [：] + explain)
+  [ ]
+  highlight(
+    top-edge: "x-height",
+    radius: .4em,
+    extent: .2em,
+    words)
+
 }
 
-#align(center)[= 🙜~~#title~~🙞]
+#let sn(sentence, explain) = {
+  underline(
+    stroke: (dash: "dashed", paint: blue, thickness: 1.5pt),
+    offset: 4pt,
+    sentence)
+  snote(explain)
+}
 
 
-Outside her kitchen window, the #voc[hedgerow][矮树篱] glistened as if the snow possessed a light of its own; when the sky darkened towards evening, an unearthly, reflected pallor remained behind upon the winter's landscape, while still the soft flakes floated down. This lovely girl, whose skin possesses that same, inner light so you would have thought she, too, was made all of snow, pauses in her chores in the mean kitchen to look out at the country road. Nothing has passed that way all day; the road is white and unmarked as a spilled bolt of bridal satin.
+#align(center)[= 🙜~~~#title~~~🙞]
+
+Outside her kitchen window, the #voc[hedgerow][矮树篱] glistened as if the snow possessed a light of its own; when the sky darkened towards evening, an unearthly, reflected pallor remained behind upon the winter's landscape, while still the soft flakes floated down. This lovely girl, whose skin possesses that same, inner light so you would have thought she, too, was made all of snow, pauses in her chores in the mean kitchen to look out at the country road. Nothing has passed that way all day; the road is white and unmarked as a spilled #voc[bolt][（布的）一匹] of bridal satin.
 
 
 Father said he would be home before nightfall.
@@ -81,23 +112,23 @@ The snow brought down all the telephone wires; he couldn't have called, even wit
 
 The roads are bad. I hope he'll be safe.
 
-But the old car stuck fast in a #voc[rut][车辙], wouldn't budge an inch; the engine whirred, coughed and died and he was far from home. Ruined, once; then ruined again, as he had learnt from his lawyers that very morning; at the conclusion of the lengthy, slow attempt to restore his fortunes, he had turned out his pockets to find the cash for petrol to take him home. And not even enough money left over to buy his Beauty, his girl-child, his pet, the one white rose she said she wanted; the only gift she wanted, no matter how the case went, how rich he might once again be. She had asked for so little and he had not been able to give it to her. He cursed the useless car, the last straw that broke his spirit; then, #voc[nothing for it but to][除了……以外没有别的办法] fasten his old sheepskin coat around him, abandon the heap of metal and set off down the snow-filled lane to look for help.
+But the old car stuck #voc[fast][系牢的，一动不动] in a #voc[rut][车辙], wouldn't budge an inch; the engine whirred, coughed and died and he was far from home. Ruined, once; then ruined again, as he had learnt from his lawyers that very morning; at the conclusion of the lengthy, slow attempt to restore his fortunes, he had turned out his pockets to find the cash for petrol to take him home. And not even enough money left over to buy his Beauty, his girl-child, his pet, the one white rose she said she wanted; the only gift she wanted, no matter how the case went, how rich he might once again be. She had asked for so little and he had not been able to give it to her. He cursed the useless car, the last straw that broke his spirit; then, #voc[nothing for it but to][除了……以外没有别的办法] fasten his old sheepskin coat around him, abandon the heap of metal and set off down the snow-filled lane to look for help.
 
-#notefigure(
-  image("img/palladian.jpeg", width: 80mm),
-  caption: [AIGC: the house])
+#figure(
+  image("img/palladian.jpeg", width: 80%),
+  caption: [The house (AIGC)])
 
-Behind #voc[wrought-iron][锻铁，熟铁] gates, a short, snowy #voc[drive][私人车道] performed a reticent #voc[flourish][（为引起注意）挥舞] before a miniature, perfect #voc[Palladian][Andrea Palladio，16世纪意大利建筑师。这种风格强调古典元素、对称、比例，以及使用庙宇式正面设计。] house that seemed to hide itself shyly behind snow-laden skirts of an antique cypress. It was almost night; that house, with its sweet, retiring, melancholy grace, would have seemed deserted but for a light that flickered in an upstairs window, so vague it might have been the reflection of a star, if any stars could have penetrated the snow that whirled yet more thickly. Chilled through, he pressed the latch of the gate and saw, with a pang, how, on the withered ghost of a tangle of thorns, there clung, still, the faded rag of a white rose.
+Behind #voc[wrought-iron][锻铁，熟铁] gates, a short, snowy #voc[drive][私人车道] performed a reticent #voc[flourish][（为引起注意）挥舞] before a miniature, perfect #voc[Palladian][Andrea Palladio，16世纪意大利建筑师。这种风格强调古典元素、对称、比例，以及使用庙宇式正面设计。] house that seemed to hide itself shyly behind snow-laden skirts of an antique cypress. It was almost night; that house, with its sweet, retiring, melancholy grace, would have seemed deserted but for a light that flickered in an upstairs window, so vague it might have been the reflection of a star, if any stars could have penetrated the snow that whirled yet more thickly. Chilled through, he pressed the latch of the gate and saw, with a #voc[pang][肉体或精神上一阵极度的痛苦], how, on the withered ghost of a tangle of thorns, there clung, still, the faded rag of a white rose.
 
 The gate clanged loudly shut behind him; too loudly. For an instant, that reverberating clang seemed final, emphatic, ominous as if the gate, now closed, barred all within it from the world outside the walled, wintry garden. And, from a distance, though from what distance he could not tell, he heard the most singular sound in the world: a great roaring, as of a beast of prey.
 
-In too much need to allow himself to be intimidated, he #voc[squared up][面对，正视，直面] to the mahogany door. This door was equipped with a knocker in the shape of a lion's head, with a ring through the nose; as he raised his hand towards it, it came to him this lion's head was not, as he had thought at first, made of brass, but, instead, of gold. Before, however, he could announce his presence, the door swung silently inward on well-oiled hinges and he saw a white hall where the candles of a great chandelier cast their benign light upon so many, many flowers in great, free-standing jars of crystal that it seemed the whole of spring drew him into its warmth with a profound intake of perfumed breath. Yet there was no living person in the hall. 
+#sn[In too much need to allow himself to be intimidated][由于极度渴望而顾不上胆怯。注意不要解读成 need to allow。], he #voc[squared up][面对，正视，直面] to the mahogany door. This door was equipped with a knocker in the shape of a lion's head, with a ring through the nose; as he raised his hand towards it, it came to him this lion's head was not, as he had thought at first, made of brass, but, instead, of gold. Before, however, he could announce his presence, the door swung silently inward on well-oiled hinges and he saw a white hall where the candles of a great chandelier cast their benign light upon so many, many flowers in great, free-standing jars of crystal that it seemed the whole of spring drew him into its warmth with a profound intake of perfumed breath. Yet there was no living person in the hall. 
 
 The door behind him closed as silently as it had opened, yet, this time, he felt no fear although he knew by the pervasive atmosphere of a suspension of reality that he had entered a place of privilege where all the laws of the world he knew need not necessarily apply, for the very rich are often very eccentric and the house was plainly that of an exceedingly wealthy man. As it was, when nobody came to help him with his coat, he took it off himself. At that, the crystals of the chandelier tinkled a little, as if emitting a pleased chuckle, and the door of a cloakroom opened of its own accord. There were, however, no clothes at all in this cloakroom, not even the #voc[statutory][必备的] country-garden mackintosh to greet his own #voc[squirearchal][地主阶层的，乡绅风格的。注意这句话幽默的笔法] sheepskin, but, when he emerged again into the hall, he found a greeting waiting for him at last -- there was, of all things, a liver and white King Charles spaniel crouched with head intelligently cocked, on the #voc[kelim runner][一种土尔其绣织长条地毯]. It gave him further, comforting proof of his unseen host's wealth and eccentricity to see the dog wore, in place of a collar, a diamond necklace.
-
 #notefigure(
-  image("img/spaniel.jpeg", width: 80mm),
-  caption: [AIGC: King Charles spaniel wearing necklace])
+  image("img/spaniel.jpeg", width: 100%),
+  caption: [King Charles spaniel wearing necklace (AIGC)],
+)
 
 The dog sprang to its feet in welcome and busily shepherded him (how amusing!) to a snug little leather-panelled study on the first floor, where a low table was drawn up to a roaring log fire. On the table, a silver tray; round the neck of the whisky #voc[decanter][盛酒的玻璃细颈瓶], a silver tag with the legend: Drink me, while the cover of the silver dish was engraved with the exhortation: Eat me, in a #voc[flowing hand][花体字]. This dish contained sandwiches of thick-cut roast beef, still bloody. He drank the one with soda and ate the other with some excellent mustard thoughtfully provided in a stoneware pot, and, when the spaniel saw to it he had served himself, she trotted off about her own business.
 
@@ -119,7 +150,7 @@ There is always a dignity about great bulk, an assertiveness, a quality of being
 
 This leonine apparition shook Beauty's father until his teeth rattled and then dropped him sprawling on his knees while the spaniel, darting from the open door, danced round them, yapping distractedly, like a lady at whose dinner party blows have been exchanged.
 
-"My good fellow --" stammered Beauty's father; but the only response was a renewed roar. "Good fellow? I am no good fellow! I am the Beast, and you must call me Beast, while I call you, Thief!"
+"My good fellow--" stammered Beauty's father; but the only response was a renewed roar. "Good fellow? I am no good fellow! I am the Beast, and you must call me Beast, while I call you, Thief!"
 
 "Forgive me for robbing your garden, Beast!"
 
@@ -133,11 +164,10 @@ The Beast rudely snatched the photograph her father drew from his wallet and ins
 
 Although her father had told her of the nature of the one who waited for her, she could not control an instinctual shudder of fear when she saw him, for a lion is a lion and a man is a man and, though lions are more beautiful by far than we are, yet they belong to a different order of beauty and, besides, they have no respect for us: why should they? Yet wild things have a far more rational fear of us than is ours of them, and some kind of sadness in his agate eyes, that looked almost blind, as if sick of sight, moved her heart.
 
+He sat, impassive as a #voc[figurehead][装饰船头的人像], at the top of the table; the dining room was #highlight[Queen Anne], tapestried, a gem. Apart from an aromatic soup kept hot over a #voc[spirit lamp][酒精灯], the food, though exquisite, was cold -- a cold bird, a cold #voc[soufflé][蛋奶酥], cheese. He asked her father to serve them from a buffet and, himself, ate nothing. He grudgingly admitted what she had already guessed, that he disliked the presence of servants because, she thought, a constant human presence would remind him too bitterly of his otherness, but the spaniel sat at his feet throughout the meal, jumping up from time to time to see that everything was in order.
 #notefigure(
-  image("img/queen_annie.jpg", width: 80mm),
+  image("img/queen_annie.jpg", width: 100%),
   caption: [Queen Anne Style Dining Room -- Benjamin Altman, 1912])
-
-He sat, impassive as a #voc[figurehead][装饰船头的人像], at the top of the table; the dining room was Queen Anne, tapestried, a gem. Apart from an aromatic soup kept hot over a #voc[spirit lamp][酒精灯], the food, though exquisite, was cold -- a cold bird, a cold #voc[soufflé][蛋奶酥], cheese. He asked her father to serve them from a buffet and, himself, ate nothing. He grudgingly admitted what she had already guessed, that he disliked the presence of servants because, she thought, a constant human presence would remind him too bitterly of his otherness, but the spaniel sat at his feet throughout the meal, jumping up from time to time to see that everything was in order.
 
 How strange he was. She found his bewildering difference from herself almost intolerable; its presence choked her. There seemed a heavy, soundless pressure upon her in his house, as if it lay under water, and when she saw the great paws lying on the arm of his chair, she thought: they are the death of any tender herbivore. And such a one she felt herself to be, Miss Lamb, spotless, sacrificial.
 
@@ -149,8 +179,8 @@ Her bedroom contained a marvellous glass bed; she had a bathroom, with towels th
 
 Who prepared her meals? Loneliness of the Beast; all the time she stayed there, she saw no evidence of another human presence but the trays of food had arrived on a #voc[dumb waiter][楼层间运送食物和餐具的升降机] inside the mahogany cupboard in her parlour. Dinner was #voc[eggs Benedict][班尼迪克蛋，一道在吐司面包上盖上火腿、荷包蛋和奶油蛋黄酱的菜肴] and grilled veal; she ate it as she browsed in a book she had found in the rosewood revolving bookcase, a collection of courtly and elegant French fairy tales about white cats who were transformed princesses and fairies who were birds. Then she pulled a sprig of muscat grapes from a fat bunch for her dessert and found herself yawning; she discovered she was bored. At that, the spaniel took hold of her skirt with its velvet mouth and gave a firm but gentle tug. She allowed the dog to trot before her to the study in which her father had been entertained and there, to her well-disguised dismay, she found her host, seated beside the fire with a tray of coffee at his elbow from which she must pour.
 
-#notefigure(
-  image("img/lion.jpg", width: 80mm),
+#figure(
+  image("img/lion.jpg", width: 90%),
   caption: [The winged lion of St Mark at the Scuola Grande di San Marco, Venice.])
 
 The voice that seemed to issue from a cave full of echoes, his dark, soft rumbling growl; after her day of pastel-coloured idleness, how could she converse with the possessor of a voice that seemed an instrument created to inspire the terror that the chords of great organs bring? Fascinated, almost awed, she watched the firelight play on the gold fringes of his mane; he was irradiated, as if with a kind of halo, and she thought of the first great beast of the Apocalypse, the winged lion with his paw upon the Gospel, Saint Mark. Small talk turned to dust in her mouth; small talk had never, at the best of times, been Beauty's forte, and she had little practice at it.
