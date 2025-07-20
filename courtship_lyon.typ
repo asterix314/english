@@ -16,7 +16,8 @@
 #show link: underline
 
 #set page(
-  flipped: true,
+  paper: "presentation-16-9",
+//  flipped: true,
   fill: silver,
   header: context if here().page() > 1 {
     marginalia.header(
@@ -114,11 +115,10 @@ The roads are bad. I hope he'll be safe.
 
 But the old car stuck #voc[fast][系牢的，一动不动] in a #voc[rut][车辙], wouldn't budge an inch; the engine whirred, coughed and died and he was far from home. Ruined, once; then ruined again, as he had learnt from his lawyers that very morning; at the conclusion of the lengthy, slow attempt to restore his fortunes, he had turned out his pockets to find the cash for petrol to take him home. And not even enough money left over to buy his Beauty, his girl-child, his pet, the one white rose she said she wanted; the only gift she wanted, no matter how the case went, how rich he might once again be. She had asked for so little and he had not been able to give it to her. He cursed the useless car, the last straw that broke his spirit; then, #voc[nothing for it but to][除了……以外没有别的办法] fasten his old sheepskin coat around him, abandon the heap of metal and set off down the snow-filled lane to look for help.
 
-#figure(
-  image("img/palladian.jpeg", width: 80%),
-  caption: [The house (AIGC)])
-
 Behind #voc[wrought-iron][锻铁，熟铁] gates, a short, snowy #voc[drive][私人车道] performed a reticent #voc[flourish][（为引起注意）挥舞] before a miniature, perfect #voc[Palladian][Andrea Palladio，16世纪意大利建筑师。这种风格强调古典元素、对称、比例，以及使用庙宇式正面设计。] house that seemed to hide itself shyly behind snow-laden skirts of an antique cypress. It was almost night; that house, with its sweet, retiring, melancholy grace, would have seemed deserted but for a light that flickered in an upstairs window, so vague it might have been the reflection of a star, if any stars could have penetrated the snow that whirled yet more thickly. Chilled through, he pressed the latch of the gate and saw, with a #voc[pang][肉体或精神上一阵极度的痛苦], how, on the withered ghost of a tangle of thorns, there clung, still, the faded rag of a white rose.
+#notefigure(
+  image("img/palladian.jpeg", width: 100%),
+  caption: [The house (AIGC)])
 
 The gate clanged loudly shut behind him; too loudly. For an instant, that reverberating clang seemed final, emphatic, ominous as if the gate, now closed, barred all within it from the world outside the walled, wintry garden. And, from a distance, though from what distance he could not tell, he heard the most singular sound in the world: a great roaring, as of a beast of prey.
 
@@ -136,9 +136,9 @@ All that remained to make Beauty's father entirely comfortable was to find, in a
 
 And he was disconcerted but, in his #voc[impecunious][没钱；一文不名] circumstances, relieved to hear the bill would go on his hospitable if absent host's account; no question, assured the mechanic. It was the master's custom.
 
-Time for another whisky as he tried, unsuccessfully, to call Beauty and tell her he would be late; but the lines were still down, although, miraculously, the storm had cleared as the moon rose and now a glance between the velvet curtains revealed a landscape as of ivory with an inlay of silver. Then the spaniel appeared again, with his hat in her careful mouth, prettily wagging her tail, as if to tell him it was time to be gone, that this magical hospitality was over. As the door #voc[swung to][（门窗）自动关上，缓慢闭合] behind him, he saw the lion's eyes were made of agate.
+Time for another whisky as he tried, unsuccessfully, to call Beauty and tell her he would be late; but the lines were still down, although, miraculously, the storm had cleared as the moon rose and now a glance between the velvet curtains revealed a landscape as of ivory with an inlay of silver. Then the spaniel appeared again, with his hat in her careful mouth, prettily wagging her tail, as if to tell him it was time to be gone, that this magical hospitality was over. As the door #voc[swung to][（门窗）自动关上，缓慢闭合] behind him, he saw the lion's eyes were made of #voc[agate][玛瑙].
 
-Great wreaths of snow now precariously curded the rose trees and, when he brushed against a stem on his way to the gate, a chill armful softly thudded to the ground to reveal, as if miraculously preserved beneath it, one last, single, perfect rose that might have been the last rose left living in all the white winter, and of so intense and delicate a fragrance it seemed to ring like a #voc[dulcimer][扬琴] on the frozen air.
+Great wreaths of snow now precariously curded the rose trees and, when he brushed against a stem on his way to the gate, a chill armful softly thudded to the ground to reveal, as if miraculously preserved beneath it, one last, single, perfect rose that might have been the last rose left living in all the white winter, and of so intense and delicate a fragrance #sn[it seemed to ring like a #highlight(top-edge: "x-height", radius: .4em, extent: .2em)[dulcimer] on the frozen air][通感修辞（synesthesia）].#note[_*dulcimer*_：扬琴]
 
 How could his host, so mysterious, so kind, deny Beauty her present?
 
@@ -148,7 +148,7 @@ At that, every window of the house blazed with furious light and a #voc[fugal][�
 
 There is always a dignity about great bulk, an assertiveness, a quality of being more there than most of us are. The being who now confronted Beauty's father seemed to him, in his confusion, vaster than the house he owned, ponderous yet swift, and the moonlight glittered on his great, #voc[mazy][（头发）凌乱的] head of hair, on the eyes green as agate, on the golden hairs of the great paws that grasped his shoulders so that their claws pierced the sheepskin as he shook him like an angry child shakes a doll. 
 
-This leonine apparition shook Beauty's father until his teeth rattled and then dropped him sprawling on his knees while the spaniel, darting from the open door, danced round them, yapping distractedly, like a lady at whose dinner party blows have been exchanged.
+This leonine apparition shook Beauty's father until his teeth rattled and then dropped him sprawling on his knees while the spaniel, darting from the open door, danced round them, #voc[yapping][狂吠，尖叫] distractedly, like a lady at whose dinner party blows have been exchanged.
 
 "My good fellow--" stammered Beauty's father; but the only response was a renewed roar. "Good fellow? I am no good fellow! I am the Beast, and you must call me Beast, while I call you, Thief!"
 
