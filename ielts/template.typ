@@ -1,6 +1,7 @@
 #import "@preview/marginalia:0.3.1" as marginalia: note, wideblock
 #import "@preview/showybox:2.0.4": showybox 
 #import "@preview/lucide:0.1.0": lucide-icon
+#import "@preview/hydra:0.6.2": hydra
 
 #let template(doc) = {
   set page(
@@ -8,31 +9,37 @@
     height: 800pt,
     margin: (x: 54pt),
     fill: rgb("#F5F5DC"),
-    header: {
-      marginalia.header(
-        text-style: (size: 11pt, font: "Youyuan",),
-        [],
-        box(
-          image("/img/xhs.svg", width: 100%), 
-          fill: red, 
-          height: 20pt,
-          width: 46pt,
-          inset: 2pt,
-          baseline: 6pt,
-          radius: 6pt,
-        ) + [ | 奇宝爹],
-        []
-      )
+    header: context {
+      if here().page() > 1 {
+        marginalia.header(
+          text-style: (
+            size: 11pt, 
+            style: "normal",
+            font: ("STIX Two Text", "Youyuan"),),
+          [],
+          box(
+            image("/img/xhs.svg", width: 100%), 
+            fill: red, 
+            height: 20pt,
+            width: 46pt,
+            inset: 2pt,
+            baseline: 6pt,
+            radius: 6pt,
+          ) + [ | 奇宝爹],
+          align(right)[#hydra(1) #hydra(2)]
+        )}
     },
     footer: context {
-      marginalia.header(
-        text-style: (
-          size: 11pt, 
-          font: ("STIX Two Text", "Youyuan")),
-        [],
-        [一只雅思作文六分狗的自我修养],
-        align(right)[#lucide-icon("paw-print")  #counter(page).display("1")]
-      )
+      if here().page() > 1 {
+        marginalia.header(
+          text-style: (
+            size: 11pt, 
+            font: ("STIX Two Text", "Youyuan")),
+          [],
+          [一只雅思作文六分狗的自我修养],
+          align(right)[#lucide-icon("paw-print")  #counter(page).display("1")]
+        )
+      }
     }
   )
 
@@ -254,6 +261,7 @@
       body-color: yellow.lighten(80%),
       border-color: yellow.darken(30%),
       radius: 16pt),
+    shadow: (offset: 3pt),
     title: [#lucide-icon("bone") 经验总结],
     body)
 }
