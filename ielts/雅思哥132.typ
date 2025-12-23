@@ -8,7 +8,7 @@
 === Task 2
 Caring for children is probably the most important thing of the society. It is suggested that all mothers and fathers should be required to take childcare training courses. To what extent do you agree or disagree with the statement?]
 
-#作文(timing: 54, words: 328)[#praise[While][通过“While…”句型引出相反观点，但可以更进一步强调这种对比。] it sounds #typo[reasonable][plausible] to let soon-to-be parents take childcare training courses, making it a strict requirement may not be practical. #praise[][立场明确。段落的逻辑结构清晰]
+#作文(timing: 54, words: 328, date: "2025-11-25")[#praise[While][通过“While…”句型引出相反观点，但可以更进一步强调这种对比。] it sounds #typo[reasonable][plausible] to let soon-to-be parents take childcare training courses, making it a strict requirement may not be practical. #praise[][立场明确。段落的逻辑结构清晰]
 
 For starters, parents #typo[may not want][are reluctant] to engage in such courses for a number of reasons. Training #typo[takes time and money][are burdensome], and even if the course is totally free, finding time may not be easy for working parents, who may believe that they can handle their newborns quite well by themselves. #issue[][这一段提出了父母不愿参加育儿课程的原因，论点比较直接。 但是论证的深度不足，缺乏具体的例子支持。]
 

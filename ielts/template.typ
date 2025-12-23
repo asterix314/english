@@ -154,13 +154,13 @@
   super(
     size: 11pt, 
     text(
-      font: "Fira Sans",
+      font: ("Fira Sans", "LXGW WenKai"),
       fill: red.darken(30%),
       comment
     ))
 }
 
-#let 作文(body, timing: 0, words: 0) = {
+#let 作文(body, timing: 0, words: 0, date: "") = {
   [==== #box(lucide-icon("pencil"), baseline: 2pt) 作文]
   set text(
     font: ("Edu NSW ACT Foundation", "LXGW WenKai"),
@@ -179,7 +179,11 @@
       + [ #timing 分钟]
       + h(1em)
       + box(lucide-icon("pen-tool"), baseline: 2pt)
-      + [ #words 词]))
+      + [ #words 词]
+      + h(1em)
+      + box(lucide-icon("calendar-fold"), baseline: 2pt)
+      + [ #date] 
+      ))
 }
 
 #let 范文(ai: none, body) = {
@@ -189,8 +193,9 @@
   body
 }
 
-#let 评价(tr: 0, cc: 0, lr: 0, gra: 0, ai: none, ..appraisals) = {  if ai == none {ai = 千问}
-  let mean = (tr + cc + lr + gra)/4
+#let 评价(tr: 0, ta: 0, cc: 0, lr: 0, gra: 0, ai: none, ..appraisals) = {  if ai == none {ai = 千问}
+  let tra = if tr > 0 {tr} else {ta}
+  let mean = (tra + cc + lr + gra)/4
   let overall = calc.trunc(mean)
   let f = calc.fract(mean)
   if f > 0.7 {overall += 1}
@@ -216,8 +221,8 @@
     )
   }
   appraise(
-    title: "Task Response", 
-    band: tr, 
+    title: if tr > 0 {"Task Response"} else {"Task Achievement"}, 
+    band: tra, 
     appraisals.at(0))
   appraise(
     title: "Coherence and Cohesion",

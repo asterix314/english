@@ -19,7 +19,6 @@
 #colbreak()
 #include("cam20-3.typ")
 
-#colbreak()
 #include("cam20-4.typ")
 
 #wideblock[= Cambridge 19]
@@ -28,6 +27,15 @@
 #include("cam19-2.typ")
 
 
+#wideblock[= Cambridge 18]
+
+#include("cam18-1.typ")
+
+
+
 #wideblock[= 雅思哥]
 
 #include("雅思哥132.typ")
+
+#colbreak()
+#include("雅思哥004.typ")

@@ -12,7 +12,7 @@ The first table below shows changes in the total population of New York City fro
 
 Summarize the information by selecting and reporting the main features, and make comparisons where relevant.]
 
-#作文(timing: 36, words: 183)[The population of New York City has increased greatly. It had around 80 thousand residents in the year 1800. The population more than quadrupled to over 3 million in 1900, then to just above 8 million in 2000. #praise[][提炼总人口增长趋势]
+#作文(timing: 36, words: 183, date: "2025-11-21")[The population of New York City has increased greatly. It had around 80 thousand residents in the year 1800. The population more than quadrupled to over 3 million in 1900, then to just above 8 million in 2000. #praise[][提炼总人口增长趋势]
 
 If we #typo[breakdown][break down] the increase into the different districts, a pattern emerges: #praise[][指出了曼哈顿人口占比显著下降，并识别出人口向其他行政区转移的模式] that of the #praise[bulk of][地道表达] the population flowing out of #typo[Manhatten][Manhattan] to the other districts (Brooklyn, Bronx, Queens, and Staten Island), #typo[porportionally][proportionally] speaking. #praise[Specifically][有效连接词], in 1800, the population of Manhattan accounted for 76% of #typo[all][the total] population in New York. That number decreased to 54% in 1900, and then to only 19% at the #issue[turn of the century][歧义。可明确写by 2000].
 
@@ -71,7 +71,7 @@ Thus, while Manhattan’s absolute population grew until 1900, its relative domi
 === Task 2
 Access to clean water is a basic human right. Therefore every home should have a water supply that is provided free of charge. Do you agree or disagree?]
 
-#作文(words: 340, timing: 48)[Just because access to clean water is a basic human right doesn't mean that every home's water supply should be provided free of charge.#praise[][表达清晰，开篇直接表明观点]
+#作文(words: 340, timing: 48, date: "2025-11-22")[Just because access to clean water is a basic human right doesn't mean that every home's water supply should be provided free of charge.#praise[][表达清晰，开篇直接表明观点]
 
 This is simply because clean water, like electricity, gas, central heating, and many other utilities, comes at a cost, #issue[regardless of it being][这里regardless of it being ... 表述稍显繁琐，可改为regardless of whether it is ...，使表达简洁准确] a basic human right or not: water has to be collected, treated and processed to remove germs and toxic chemicals until it is clean and safe for everyday use, to which end large water treatment plants have to be #issue[built and run][动词也可以更丰富，如用constructed and maintained替代 built and run。] #praise[][通过阐述需要建设污水处理厂说明用水有成本]. Who should bear the cost? The #typo[comsumers][consumers] naturally. So it is only right that households pay a fee for their use of clean water, or gas or electricity etc. #issue[for that matter][避免口语化表达].
 

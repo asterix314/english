@@ -3,7 +3,6 @@
 // #show: template
 
 #wideblock[
-  
 == Test 4
 
 === Task 1
@@ -14,7 +13,7 @@ The diagram below shows how fabric is manufactured from bamboo.
 Summarise the information by selecting and reporting the main features, and make comparisons where relevant.]
 
 
-#作文(timing: 35, words: 173)[The flow chart #praise[depicts][好词] the end-to-end process of how bamboo fabric is made, from plant to garment.
+#作文(timing: 35, words: 173, date: "2025-12-16")[The flow chart #praise[depicts][好词] the end-to-end process of how bamboo fabric is made, from plant to garment.
 
 First, bamboo #issue[sprouts are planted][不能播种幼芽。应该是seedlings are planted] in spring and grow to appropriate heights in #typo[autum][autumn], when they are harvested and sent to the factory where they #issue[get][口语化用词] cut into strips, #issue[stems and leaves][不必要的细节]. Next, these strips are crushed into a liquid pulp, from which long fibres are #issue[then filtered out and then][then ... then用词重复。长句可拆分重组增强可读性。] softened by mixing them with water and amine oxide. 
 
@@ -88,7 +87,7 @@ In summary, the transformation of bamboo into wearable fabric involves a multi-s
 === Task 2
 Many aspects of the way people dress today are influenced by global fashion trends. How has global fashion become such a strong influence on people's lives? Do you think this is a positive or negative development?]
 
-#作文(words: 320, timing: 50)[What are you wearing today? Chances are, no matter where you come from, you are wearing in a style that's readily recognizalbe and more or less just like everybody else: a suit and tie, or jeans and shirt, a hoodied outfit, or perhaps carrying a Gucci handbag and a pair of chic sunglasses to match: all dress codes molded by global fashion trends. It's amazing, isn't it, that a world of people so diverse in culture and tradtitions and indeed historical dressing designs, should in the end converge to really only one style in their choice of clothing: the style of consumerism.
+#作文(words: 320, timing: 50, date: "2025-12-16")[What are you wearing today? Chances are, no matter where you come from, you are wearing in a style that's readily recognizalbe and more or less just like everybody else: a suit and tie, or jeans and shirt, a hoodied outfit, or perhaps carrying a Gucci handbag and a pair of chic sunglasses to match: all dress codes molded by global fashion trends. It's amazing, isn't it, that a world of people so diverse in culture and tradtitions and indeed historical dressing designs, should in the end converge to really only one style in their choice of clothing: the style of consumerism.
 
 That's it. Consumersim is the reason why a Chinese, an Indian, or a Turk are all dressed like an urban yappie in San Fransisco. Nobody can really escape, because the power of consumerism is all too great. You can wear the Chinese traditional garment when you feel like it, with its long sleeves and ornate headdress, while taking a measured walk in an ancient temple, posing for pictures. But try going to work with that -- more than a few eyebrows will be raised, to say the least. As the global population are united under capitalism and consumerism is king, there is little doubt that people should dress accordingly.
 
