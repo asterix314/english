@@ -4,6 +4,8 @@
 
 #wideblock(image("/img/六分狗.png", width: 100%))
 
+#align(right)[work in progress 未完稿]
+
 #{
   set text(style: "normal")
   wideblock(outline(title: [目录], depth: 4))
@@ -21,10 +23,10 @@
 
 #include("cam20-4.typ")
 
-#wideblock[= Cambridge 19]
+// #wideblock[= Cambridge 19]
 
-#include("cam19-1.typ")
-#include("cam19-2.typ")
+// #include("cam19-1.typ")
+// #include("cam19-2.typ")
 
 
 #wideblock[= Cambridge 18]

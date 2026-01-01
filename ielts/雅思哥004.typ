@@ -1,6 +1,6 @@
 #import "template.typ": *
 
-// #show: template
+#show: template
 
 #wideblock[
 == 4

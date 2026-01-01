@@ -58,8 +58,7 @@ If we #typo[breakdown][break down] the increase into the different districts, a 
 2. 最后应该有个总结的段落。]
 
 
-#范文[
-The charts illustrate New York City’s population growth and its distribution across five boroughs from 1800 to 2000.
+#范文[The charts illustrate New York City’s population growth and its distribution across five boroughs from 1800 to 2000.
 
 Overall, the city’s total population surged from 80,000 to over 8 million, while the demographic centre shifted dramatically from Manhattan to the outer boroughs.
 
@@ -143,12 +142,10 @@ In conclusion, to argue for free clean water based on human rights is #typo[igor
 3. 不能一边倒论述。须充分考虑反方观点合理性。]
 
 
-#范文[
-While access to clean water is universally acknowledged as a fundamental human right, it does not logically follow that this essential resource should be supplied to every household without charge. A more pragmatic approach recognises that while the state has a duty to ensure equitable access, the actual provision of water involves substantial operational costs that must be sustainably financed.
+#范文[While access to clean water is universally acknowledged as a fundamental human right, it does not logically follow that this essential resource should be supplied to every household without charge. A more pragmatic approach recognises that while the state has a duty to ensure equitable access, the actual provision of water involves substantial operational costs that must be sustainably financed.
 
 The process of delivering potable water—sourcing, purification, distribution, and waste management—requires significant infrastructure investment and ongoing maintenance. Desalination plants, filtration systems, and pipeline networks all incur expenses that cannot be sustained indefinitely without revenue. If governments mandatorily impose free water supply, private enterprises would inevitably withdraw from the sector due to unprofitability, while public budgets in many nations, particularly in the developing world, are already stretched thin. The result would not be universal access, but rather systemic collapse and even greater inequity.
 
 That said, this does not absolve governments of their moral obligation. Instead of free provision, a more viable model combines targeted subsidies with tiered pricing: basic water needs for drinking, cooking, and hygiene could be heavily subsidised or even free up to a certain quota, while excessive consumption is charged at market rates. Countries like South Africa and Singapore have implemented such systems successfully, balancing affordability, sustainability, and conservation.
 
-In conclusion, conflating a human right with zero-cost delivery overlooks economic realities. Ensuring universal access to clean water is not about eliminating charges, but about designing intelligent, equitable financing mechanisms that uphold both human dignity and fiscal responsibility.]
-]
+In conclusion, conflating a human right with zero-cost delivery overlooks economic realities. Ensuring universal access to clean water is not about eliminating charges, but about designing intelligent, equitable financing mechanisms that uphold both human dignity and fiscal responsibility.]]
