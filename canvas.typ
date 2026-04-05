@@ -4,14 +4,14 @@
 
 #set par(
   justify: true,
-  leading: 1.2em,
-  spacing: 2em
+//  leading: 1em,
+//  spacing: 2em
 )
 
 #set text(
   white,
-  size: 17pt,
-  font: "Alef"
+  size: 20pt,
+  font: "Papyrus"
 )
 
 #figure(

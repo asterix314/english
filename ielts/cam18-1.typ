@@ -143,3 +143,18 @@ Of course, applied research—such as vaccine development or climate modelling�
 
 In conclusion, while improving lives is a noble and necessary goal, it should not be the primary aim of science. The deepest and most transformative benefits to humanity emerge not from targeting comfort, but from daring to ask: “What is true?” Only by protecting the freedom to explore without immediate purpose can science continue to illuminate the future.]
 ]
+
+
+plan:
+
+1. topic + opinion: open boarders for talents 
+
+2.a fairness. taxpayer. work as a payback.
+2.b opposite example. if not checked, talents would run off. e.g. poor provinces in China remain poor for lack of young talents.
+
+3.a market economy imperative
+3.b more opportunities. Einschtein (Germany)
+3.c ultimately more benefits to mankind. sometimes to home country as well. 
+
+4. conclusion
+

@@ -59,18 +59,13 @@
   show heading.where(level: 2): set block(spacing: 1.2em)
 
 
-  show heading.where(level: 3): it => {
-    it.body + [.]
-  }
-
-  show heading.where(level: 4): set block(spacing: 1em)
+  show heading.where(level: 3): set block(spacing: 1em)
 
   set text(
     size: 14pt,
     font: ("STIX Two Text", "Youyuan"),
     style: "italic"
   )
-
   show: marginalia.setup.with(
     inner: (far: 12mm, width: 0pt, sep: 0pt ),
     outer: (far: 12mm, width: 4cm, sep: 5mm ),
@@ -161,7 +156,7 @@
 }
 
 #let 作文(body, timing: 0, words: 0, date: "") = {
-  [==== #box(lucide-icon("pencil"), baseline: 2pt) 作文]
+  [=== #box(lucide-icon("pencil"), baseline: 2pt) 作文]
   set text(
     font: ("Edu NSW ACT Foundation", "LXGW WenKai"),
     size: 14pt,
@@ -188,7 +183,7 @@
 
 #let 范文(ai: none, body) = {
   if ai == none {ai = 千问}
-  [==== #box(lucide-icon("trophy"), baseline: 2pt) 8+范文（#ai）]
+  [=== #box(lucide-icon("trophy"), baseline: 2pt) 8+范文（#ai）]
   set text(font: "Fira Sans", weight: "light")
   body
 }
@@ -202,7 +197,7 @@
   else if f > 0.3 {overall += 0.5}
   
 //  colbreak()
-  [==== #box(lucide-icon("list-checks"), baseline: 2pt) 综合评分（#ai | #overall）]
+  [=== #box(lucide-icon("list-checks"), baseline: 2pt) 综合评分（#ai | #overall）]
   set text(
     font: ("Fira Sans", "LXGW WenKai"),
     size: 14pt,

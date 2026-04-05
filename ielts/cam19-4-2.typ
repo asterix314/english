@@ -1,0 +1,11 @@
+Some children spend hours every day on their smartphones.
+
+Why is this the case? Do you think this is a positive or a negative development?
+
+With the prevalence of smartphones nowadays, it's becoming increasingly common for children to spend several hours each day on their phones. Given the powerful technological, social, and psychological underpinnings to this development, I believe the increased screen time is a net positive, all things considered.
+
+A number of factors have contributed to the popularity of smartphones. For starters, their splendid visual-interactive interface is unparalleled by other gadgets, to which children are especially susceptible because of their natural curiosity and lack of self-control. Moreover, many people, young and old, have discovered in the online world offered by these handheld devices a sense of community and inclusiveness often lacking in real life. Indeed, the smartphones have so profoundly transformed how people interact with each other that they have simply become the embodiment of modern life itself.
+
+Given the above, is it any wonder that some children seem to get glued to their phones? To my mind, a couple of hours' worth of screen time is no big surprise, even necessary, in this day and age just to stay connected and well informed. It can give hope when hope is hard to come by elsewhere. For example, using a smartphone, teenagers confused by their gender identity can often seek refuge in specific online chat rooms or programmes, where like-minded friends show genuine care and encouragement. On the other hand, there can be too much of a good thing. Excessive use is clearly problematic for young children, hurting their eye development and taking away time for physical exercises. Perhaps more importantly, children who stare at their phones all day may lose touch with the real world, ignoring their family and friends. All these negative effects, however, can be mitigated with the right parental guidance.
+
+In conclusion, the success of the mobile phone is profound and its potential for good is immense. Parents should keep an open mind with their children's access to these smart devices to take full advantage of them, provided appropriate measures be taken to prevent overuse.
