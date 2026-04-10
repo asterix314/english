@@ -28,16 +28,13 @@
 = 词汇 Vocabulary
 ---
 
-- time is almost *up*
-
-#pause
-- to *save up* some money
-
-#pause
-- to spend *up to* an hour a day
-
-#pause
-- I *gave up* the university course
+- phrases with _up_:
+  - time is almost *up*
+  - to *save up* some money
+  - to spend *up to* an hour a day
+  - I *gave up* the university course
+  - I *took up* yoga
+  - I *wake up* early
 
 #pause
 - university (大学) vs. college (学院)
@@ -105,7 +102,7 @@ However,
 = 句意理解 Sentence Comprehension
 ---
 
-- What next? I've left *it* a bit late to start thinking about *it*. (\@john)
+- What next? I've left *it* a bit late to start thinking about *it*, but that's how I am. (\@john)
 
 #pause
 - It's better to just find a job and start a career *that way*. (\@john)
@@ -114,7 +111,7 @@ However,
 - If I *do* go on to study further ... (\@john)
 
 #pause
-- Helpful comments and ideas, please! (\@john)
+- But I've *changed my ways*. (\@mark)
 
 #pause
 - I didn't have the courage*;* I just went to university. (\@pauline)
